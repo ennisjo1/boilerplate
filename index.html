@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="screen.css">
+    <script src="index.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Home</h1>
@@ -14,6 +16,8 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    <script src="index.js"></script>
+    <div x-data="{a: ['Dr', 'Great Orator', 'Duke']}" id=PD> 
+      <button id = "purple", @click = "alert( a[1] )">Click Me!</button>
+  </div>
   </body>
 </html>
